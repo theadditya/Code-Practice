@@ -143,6 +143,15 @@ console.log(typeof g);
 
 
 
+///Cotrol FLow
+//If Else is same as C++
+//switch is same as C++
+//for loop is same as C++
+//while loop is same as C++
+// do whille loop is same as C++
+
+
+
 
 
 
