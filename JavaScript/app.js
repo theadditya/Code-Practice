@@ -1,5 +1,5 @@
 console.log("Hello! ");
-alert("Something Bizzare!");
+//alert("Something Bizzare!");
 console.log(2*2);
 console.warn('Butter');
 console.table({Hero:"Me", Zero:"You"});
@@ -40,6 +40,40 @@ console.log(yf);
 
 console.log(yf ** vf); //wiill run perfectly
 console.group(2**5);
+
+//Booleans
+//falsy values
+//false
+//ull
+//undefined
+//0
+//-0// NaN
+//'', "", ``, (empty quotes)
+
+let notDefined = undefined;
+console.log(notDefined);
+console.log(2+ undefined);// output --- NaN
+ 
+
+// comparison operator
+//    relatioal operator    
+//    >, <, >=, <= 
+console.log(10>10);
+//    Equalty operators
+// === strict equality (type+vaue)
+// === strict non-equality (tye+ value)
+// == loose equaity (value)
+// != loose on-equality (value)
+
+console.log(10 === '10');
+console.log(10 == '10');
+console.log(10 !== "10");
+console.log(10 !== 10);
+console.log(10 != "10");
+
+
+
+
 
 
 
