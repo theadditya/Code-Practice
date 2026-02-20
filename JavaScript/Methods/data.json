@@ -1,0 +1,11 @@
+{
+    "name":"Additya",
+    "age": 20,
+    "email": "addityapramanik@gmail.com",
+    "hobbies": ["Writing", "Dancing"],
+    "isAAdult": true,
+    "address": {
+        "city": "kolkata",
+        "lane": 3
+    }
+}

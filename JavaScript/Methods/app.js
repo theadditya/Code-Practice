@@ -34,3 +34,9 @@ console.log(few.meet());
 console.log(few);
 
 
+//JSOn to Stringify
+const jjk = JSON.stringify(person);
+console.log(jjk);
+console.log(typeof jjk);
+//JSON parse
+console.log(JSON.parse(jjk));
