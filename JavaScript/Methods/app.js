@@ -264,7 +264,7 @@ function ratings(rate){
     }
 }
 
-ratings(); // will not give anythig
+//ratings(); // will not give anythig
 
 function ratingsDefault(rate=0){ //set the defalut value of rate as 0
     if (rate === 5){
@@ -278,3 +278,51 @@ function ratingsDefault(rate=0){ //set the defalut value of rate as 0
 
 ratingsDefault(); // will give response considering input as default set value
 
+
+///Spread Operator
+    /* A new addition to the set of operators in JavaScript ES6
+    It takes in a literable(e.g. an array) and expands it into 
+    individual elements. The spead operator is commonly used 
+    to make shllow copies of JS Objects.
+    */
+   //Example
+function giveMe4(a,b,c,d){
+    console.log("a",a);
+    console.log("b",b);
+    console.log("c",c);
+    console.log("d",d);
+}
+
+const colors= ["blue","yellow","green","teal","white"];
+
+giveMe4(colors); // will assign the whole array as the first argument
+giveMe4(...colors); /// will spread the array and assign value for each arguement and leave the extra part of the array as not assiigned
+
+const moreColors = ['black','brown'];
+const allColors = [...colors , ...moreColors];
+console.log(allColors);
+
+//examples with object
+const obj1 ={
+    x :2, y:3,
+};
+const obj2 ={
+    z:4,
+};
+const obj3 ={
+    ...obj1,
+    ...obj2,
+};
+console.log(obj3);
+
+//Rest Parameter
+    /*
+    A function to accept an indefinite number of argumments
+    */
+//Exampple
+function user(x,...userData){// rest paameter is added in the last argument otherwise it will give error 
+    console.log(x);
+    console.log(userData);  
+}
+
+user("Adi",23,567,"male",167);
