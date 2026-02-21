@@ -162,16 +162,87 @@ console.log(lj(89));
 pj= username => `Hello ${username}`;
 console.log(pj(8));
 
-setTimeout(() =>{
-    console.log("Hello");
-    setTimeout(()=>{
-        console.log("Namaste");
-        setTimeout(()=>{
-            console.log("HII");
-            setTimeout(()=>{
-                console.log("Bonjour");
-            },2000);
-        },2000);
-    },2000);
-},2000);
+// setTimeout(() =>{
+//     console.log("Hello");
+//     setTimeout(()=>{
+//         console.log("Namaste");
+//         setTimeout(()=>{
+//             console.log("HII");
+//             setTimeout(()=>{
+//                 console.log("Bonjour");
+//              },2000);
+//         },2000);
+//     },2000);
+// },2000);
+
+
+
+//Enhanced Object Literals
+/*
+    Set of enhancemets to the syntax for defining objects in 
+    JavaScript. These enhancements make it more convenient 
+    and concise to defie object properties and methods.
+    introduce in ES6
+*/
+
+        //Examples
+function kl(user,age,sex){
+    return {
+        name: user,
+        age: age,
+        sex: sex,
+    };
+}
+
+console.log(kl("adi", 78,"Male"));
+
+function ol(user,age,sex){
+    return {
+        user,
+        age,
+        sex,
+    };
+}
+console.log(ol("Pankaj",89,"Male"));
+
+function zl(user,age,sex){
+    return {
+        user,
+        age,
+        sex,
+        intro: ()=> `My name is ${user},I am ${age} , I am a ${sex}`,
+    };
+}
+
+let vibe =zl("Pankaj",89,"Male");
+console.log(vibe.intro());
+
+
+//ES6 way
+ let lib ={
+    sum: (a,b) =>a+b ,
+    mult: (a,b) =>a*b, 
+ }; 
+
+ console.log(lib.sum(2,4));
+ 
+ console.log(lib.mult(2,4));
+
+//  let lib ={
+//     sum: (a,b) => return a+b , // will give error
+//     mult: (a,b) => return a*b, //will give error
+//  }; 
+
+//  console.log(lib.sum(2,4));
+ 
+//  console.log(lib.mult(2,4));
+
+//Another example
+function getPersosnES6(name,age,height){
+    return{
+        name,age,height,
+    };
+}
+  
+console.log(getPersosnES6("An",56,178));
 
