@@ -98,21 +98,45 @@ console.log(date);
 
 // ) /// it's working
 
-setTimeout(function (){
-    console.log(`this function will be executed after 3 seconds`);
+// setTimeout(function (){
+//     console.log(`this function will be executed after 3 seconds`);
     
-},3000);
+// },3000);
 
-const intervalId = setInterval(function(){
- console.log(`THis is a repeated function`);
+// const intervalId = setInterval(function(){
+//  console.log(`THis is a repeated function`);
  
-},1000);
+// },1000);
 
-console.log(intervalId);
+// console.log(intervalId);
 
-//sto interval after 10sec
-setTimeout(function(){
-    clearInterval(intervalId);
-    console.log(`Interval stopped`);
+// //sto interval after 10sec
+// setTimeout(function(){
+//     clearInterval(intervalId);
+//     console.log(`Interval stopped`);
     
-},10000);
+// },10000);
+
+
+//Template strings or Te mplate Literals
+    /* 
+    A feature in javascript that allows you to create strings 
+    with embdded expressions. They are denoted by backticks ``
+    insteadof sinfle or double quotes. 
+    */
+
+console.log("This is \
+    a new line a double quoted string ");
+
+console.log(`this is 
+    a example of 
+    bcktick usage `);
+console.log("2+2");
+console.log(`${2+2}`);
+console.log("${2+2}");
+console.log(`${date}`);
+console.log(typeof date);
+console.log(typeof `${date}`);
+
+
+
