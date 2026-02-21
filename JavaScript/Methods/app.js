@@ -40,3 +40,79 @@ console.log(jjk);
 console.log(typeof jjk);
 //JSON parse
 console.log(JSON.parse(jjk));
+
+
+
+//Time
+console.log(Date ()); // give  curent time time 
+
+//yesr, month, day, hours, minutes, seconds, miliseconds
+const currentdate = new Date(2027,7,23,12,0,0,0);
+console.log(currentdate);
+
+const date = new Date ();
+console.log(date);
+console.log(typeof date);
+
+console.log(date.getFullYear());
+console.log(date.getMonth());
+console.log(date.getDay());
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getSeconds());
+console.log(date.getMilliseconds());
+console.log(date.toDateString());
+console.log(date.toISOString());
+console.log(date.toLocaleDateString());
+console.log(typeof date.getFullYear());
+console.log(typeof date.getMonth());
+console.log(typeof date.getDay());
+console.log(typeof date.getHours());
+console.log(typeof date.getMinutes());
+console.log(typeof date.getSeconds());
+console.log(typeof date.getMilliseconds());
+console.log(typeof date.toDateString());
+console.log(typeof date.toISOString());
+console.log(typeof date.toLocaleDateString());
+
+//
+date.setDate(date.getDate()+1);
+console.log(date); //add 1 day
+date.setDate(date.getDate()+34);
+console.log(date);
+
+date.setDate(26);//set the date as 26 of the same month
+console.log(date);
+
+date.setFullYear(2027,5,23); // set the date as 2027/5/23
+console.log(date);
+
+
+//Setting Interval
+// function inter (){
+//     console.log(`This fuction will be executed in every 2 seconds`),3000;
+// }
+// setInterval (inter ()); //not giving repeated response don't kow why
+
+// setInterval(()=> console.log(`This fuction will be executed in every 2 seconds`),2000
+
+// ) /// it's working
+
+setTimeout(function (){
+    console.log(`this function will be executed after 3 seconds`);
+    
+},3000);
+
+const intervalId = setInterval(function(){
+ console.log(`THis is a repeated function`);
+ 
+},1000);
+
+console.log(intervalId);
+
+//sto interval after 10sec
+setTimeout(function(){
+    clearInterval(intervalId);
+    console.log(`Interval stopped`);
+    
+},10000);
