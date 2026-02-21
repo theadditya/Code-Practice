@@ -246,3 +246,35 @@ function getPersosnES6(name,age,height){
   
 console.log(getPersosnES6("An",56,178));
 
+
+//Default Fuction Parameters
+    /* Introduce in ES6, allow you to assign a default value 
+    to a parameter when the argumet value is missing in the 
+    time of call
+    */
+
+    //Examples
+function ratings(rate){
+    if (rate === 5){
+        codsole.log(`High :)`);
+    }
+    else if (rate ===0){
+        console.log(`low :(`);
+        
+    }
+}
+
+ratings(); // will not give anythig
+
+function ratingsDefault(rate=0){ //set the defalut value of rate as 0
+    if (rate === 5){
+        codsole.log(`High :)`);
+    }
+    else if (rate ===0){
+        console.log(`low :(`);
+        
+    }
+}
+
+ratingsDefault(); // will give response considering input as default set value
+
