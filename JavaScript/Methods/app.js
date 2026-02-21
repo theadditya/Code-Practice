@@ -139,4 +139,39 @@ console.log(typeof date);
 console.log(typeof `${date}`);
 
 
+//Arrow Function  or fat arrow function
+    /* 
+    concise and shorter way to define functions in Javascript
+    They were introduced in ECMAScript 6 (ES6) and provide a more
+    compact syntax compared to traditional functin expressions
+    */
+
+function nd (username){
+    return `Hello ${username}`;
+}
+console.log(nd(2));
+
+mj= (username) =>{
+   return `Hello ${username}`;
+}
+console.log(mj("Bokachoda"));
+
+lj= (username) => `Hello ${username}`; //can skip retur if the function iis of only one line 
+console.log(lj(89)); 
+
+pj= username => `Hello ${username}`;
+console.log(pj(8));
+
+setTimeout(() =>{
+    console.log("Hello");
+    setTimeout(()=>{
+        console.log("Namaste");
+        setTimeout(()=>{
+            console.log("HII");
+            setTimeout(()=>{
+                console.log("Bonjour");
+            },2000);
+        },2000);
+    },2000);
+},2000);
 
