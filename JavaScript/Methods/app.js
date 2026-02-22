@@ -326,3 +326,188 @@ function user(x,...userData){// rest paameter is added in the last argument othe
 }
 
 user("Adi",23,567,"male",167);
+
+//Destructuring
+
+    /*
+    Allow to "unpack" values from data-structure (object,array)
+    into separate distict variables.
+    */
+
+const foo =[1,2,3,4,5];
+
+const [ff,fg,fh,fi,fj,fk,fl]= foo; // order is important not the name
+console.log(ff, fg,fh,fi, fl,fk,fl);
+
+//default value passing
+let a, b;
+[a=4,b=6,c=89]= ["one","two"];
+console.log(b);
+console.log(c);
+
+
+//function exammple
+function fr(){
+    return[1,2];
+}
+
+let ma, d,bv;
+[ma,d,bv]=fr();
+console.log(ma);
+console.log(d);
+console.log(bv);
+
+
+//Assignig 
+const [am, ...brave]= ["783",6,89,46,234,675,45,3,21,9];
+console.log(am,brave);
+
+const condom= ["red","deep","teal","green","yellow"];
+const [color1, color2,color3]= condom;
+console.log(color1,color2,color3);
+
+
+//Object destructuring
+const stud ={
+    name: "adi",
+    position: "first",
+    rollno: 1,
+};
+
+const {name,rollno,position}=stud;//nming is important order is not
+console.log(name);
+console.log(rollno);
+console.log(position);
+
+//renaming variables
+const numb ={x:100,y:200};
+const {x:newOne,y:newTwo}=numb;
+// console.log(x);
+// console.log(y);
+console.log(newOne);
+console.log(newTwo);
+
+
+//object destructuring and rest operator
+let {za, zb, ... rest}={
+    za:1,zb:2,zc:3,zd:4,ze:5
+};
+console.log(a);
+console.log(b);
+console.log(rest);
+console.log(typeof a);
+console.log(typeof b);
+
+
+//function destructuring
+const person12={
+    name:"Jhon Doe",
+    age:34,
+    country: "Morocco",
+};
+// function printPersonInfo (person){
+//     console.log(`name :${person.name}`);
+//     console.log(`age: ${person.age}`);
+//     console.log(`country: ${person.country}`);
+    
+    
+    
+// }
+
+function printPersonInfo ({name, age, country}){ /// destructuring instead of using multiple times
+    console.log(`name :${name}`);
+    console.log(`age: ${age}`);
+    console.log(`country: ${country}`);
+    
+    
+    
+}
+
+printPersonInfo(person12);
+
+
+//Nested Destructuring
+const songs = [
+  { name: "Lucky You", singer: "Joyner", duration: 4.34 },
+  { name: "Just Like You", singer: "NF", duration: 3.23 },
+  { name: "Humble", singer: "Kendrick Lamar", duration: 2.33 },
+  { name: "Old Town Road", singer: "Lil Nas X", duration: 1.43 },
+  { name: "Cold Shoulder", singer: "Central Cee", duration: 5.23 },
+];
+
+// const [, , { singer }] = songs;
+const [, , { singer: s }] = songs;
+console.log(s);
+
+// ////
+// const data = {
+//   user: {
+//     id: 123,
+//     name: "John Doe",
+//     age: 30,
+//     email: "john.doe@example.com",
+//     address: {
+//       city: "New York",
+//       country: "USA",
+//     },
+//     hobbies: ["Reading", "Painting", "Cooking"],
+//     scores: {
+//       math: 95,
+//       science: 88,
+//       history: 75,
+//     },
+//   },
+//   products: [
+//     { id: 1, name: "Laptop", price: 1000 },
+//     { id: 2, name: "Phone", price: 800 },
+//     { id: 3, name: "Tablet", price: 500 },
+//   ],
+//   settings: {
+//     darkMode: true,
+//     notifications: {
+//       email: true,
+//       sms: false,
+//       push: true,
+//     },
+//     language: "English",
+//   },
+// };
+
+// // Extracting data using object destructuring
+// const {
+//   user: {
+//     name,
+//     age,
+//     address: { city, country },
+//     hobbies,
+//     scores: { math, science, history },
+//     email,
+//   },
+//   products: [product1, product2, product3],
+//   settings: {
+//     darkMode,
+//     notifications: {
+//       email: emailNotifications,
+//       sms: smsNotifications,
+//       push: pushNotifications,
+//     },
+//     language,
+//   },
+// } = data;
+
+// // Logging the extracted data using template literals
+// console.log(`Name: ${name}`);
+// console.log(`Age: ${age}`);
+// console.log(`Address: ${city}, ${country}`);
+// console.log(`Hobbies: ${hobbies.join(", ")}`);
+// console.log(`Math Score: ${math}`);
+// console.log(`Science Score: ${science}`);
+// console.log(`History Score: ${history}`);
+// console.log(`Product 1: ${product1.name} - $${product1.price}`);
+// console.log(`Product 2: ${product2.name} - $${product2.price}`);
+// console.log(`Product 3: ${product3.name} - $${product3.price}`);
+// console.log(`Dark Mode: ${darkMode}`);
+// console.log(`Email Notifications: ${emailNotifications}`);
+// console.log(`SMS Notifications: ${smsNotifications}`);
+// console.log(`Push Notifications: ${pushNotifications}`);
+// console.log(`Language: ${language}`);
