@@ -15,19 +15,21 @@ const sum = numbers.reduce((p,c) => {
 console.log(sum);
 
 
-const peoples = [{
-    name:"Addiyua",
-    age: 19,
-},
-{
-    name:"Add",
-    age: 13,
-},
-{
-    name:"Addi ghj",
-    age: 33,
-},
-];
+// const peoples = [{
+//     name:"Addiyua",
+//     age: 19,
+// },
+// {
+//     name:"Add",
+//     age: 13,
+// },
+// {
+//     name:"Addi ghj",
+//     age: 33,
+// },
+// ];
 
-const oldestPerson = peoples.reduce((p,c)=> (c.age >p.age ?  c.name :p),0);
-console.log(oldestPerson);
+// const oldestPerson = peoples.reduce((p,c)=> (c.age >p.age ?  c.name :p),0);
+// console.log(oldestPerson);
+
+
