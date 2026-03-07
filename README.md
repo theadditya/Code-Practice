@@ -1,2 +1,2 @@
-# SubhKaamna
-A website for making wish cards and share it via link so that the recipients can watch it by simply opening the link. 
+# Code Practice Repository
+I am posting all my code practice files here, so it would easy for me to manage later...
