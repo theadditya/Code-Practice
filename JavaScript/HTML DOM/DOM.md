@@ -114,3 +114,28 @@ If the element is not found, element will contain null.
     </body>
     </html>
     ```
+
+**HTML DOM - Changing HTML**
+
+The HTML DOM allows JavaScript to change both the text and the content of HTML elements.
+</br></br>The easiest way to modify the content is by using the innerHTML property:
+```bash
+    document.getElementById(id).innerHTML = new HTML
+```
+Another Example
+```bash
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h1 id="id01">Old Heading</h1>
+
+    <script>
+    const element = document.getElementById("id01");
+    element.innerHTML = "New Heading";
+    </script>
+
+    </body>
+    </html>
+
+```
