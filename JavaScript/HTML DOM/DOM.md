@@ -1,4 +1,4 @@
-# DOM
+# DOM (Document Object MOdule)
 Every thing in HTML is processed by browser as nodes i a node tree. </br>
 The DOM API is a standard for how to get, change, add, or delete HTML DOM elements. </br>
 JavaScript is the language used in browsers to access the DOM through the API.</br>
