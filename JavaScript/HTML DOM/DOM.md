@@ -139,3 +139,21 @@ Another Example
     </html>
 
 ```
+
+**Changing an Attribute in HTML**
+We can change the attribute of certaain element by fetching the element first with the attribute following the object call.
+
+-Example
+```bash
+    <!Document html>
+    <html>
+    <body>
+    <img id="Image" src="image1.jpg">
+
+    <script>
+        document.getElementById("Image").src("Image2.jpg");
+    </script>
+
+    </body>
+    </html>
+```
