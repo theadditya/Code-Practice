@@ -143,7 +143,7 @@ Another Example
 **Changing an Attribute in HTML**
 We can change the attribute of certaain element by fetching the element first with the attribute following the object call.
 
--Example
+- Example
 ```bash
     <!Document html>
     <html>
@@ -157,3 +157,33 @@ We can change the attribute of certaain element by fetching the element first wi
     </body>
     </html>
 ```
+We can add dynamic HTML content through changing the element in DOM
+- Example
+```bash
+    <!Document html>
+    <html>
+    <body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHtml=date();
+    </script>
+    </body>
+    </html>
+```
+We can directly write on HTML output stream by document.write()
+- Example
+```bash
+    <!Document html>
+    <html>
+    <body>
+    <p id="demo"> Bla  Bla Bla</p>
+    
+    <script>
+        document.write(date());
+    </script>
+
+    <p>Bla Bla Bla</p>
+    </body>
+    </html>
+```
+
