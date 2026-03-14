@@ -187,3 +187,41 @@ We can directly write on HTML output stream by document.write()
     </html>
 ```
 
+**Changing CSS with Javascript**
+We can Change the css propertyies value with the help of JavaScript 
+
+- Syntax
+```bash
+    <script>documet.getElementById(id).style.property(value)= New Value</script>
+```
+
+- Example
+```bash
+    <html>
+    <body>
+
+    <p id="p2">Hello World!</p>
+
+    <script>
+    document.getElementById("p2").style.color = "blue";
+    </script>
+
+    </body>
+    </html>
+```
+
+- Another Example
+```bash
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h1 id="id1">My Heading 1</h1>
+
+    <button type="button"
+    onclick="document.getElementById('id1').style.color = 'red'">
+    Click Me!</button>
+
+    </body>
+    </html>
+```
