@@ -225,3 +225,7 @@ We can Change the css propertyies value with the help of JavaScript
     </body>
     </html>
 ```
+**Adding , Removing, togglig a class**
+</br>`element.classList.add("class")`
+</br>`element.classList.remove("class")`
+</br>`element.classList.toggle("class")`

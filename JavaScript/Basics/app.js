@@ -1,5 +1,5 @@
 console.log("Hello! ");
-//alert("Something Bizzare!");
+// alert("Something Bizzare!");
 console.log(2*2);
 console.warn('Butter');
 console.table({Hero:"Me", Zero:"You"});
